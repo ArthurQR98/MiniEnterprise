@@ -6,7 +6,7 @@ import { AuthRepository } from '../../../infrastructure/repository/auth.reposito
 import { ExtractJwt, Strategy } from 'passport-jwt';
 import { Configuration } from '../../../appconfig/config.keys';
 import { IJwtPayload } from './jwt-payload.interface';
-import { EmployeeStatus } from 'src/employee_status.enum';
+import { EmployeeStatus } from 'src/infrastructure/shared/employee_status.enum';
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {

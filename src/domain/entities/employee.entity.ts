@@ -1,7 +1,7 @@
-import { BaseEntity, Column, CreateDateColumn, Entity, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { BaseEntity, Column, CreateDateColumn, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 import { Role } from './role.entity';
-import { EmployeeType } from '../../employee_type.enum';
-import { EmployeeStatus } from '../../employee_status.enum';
+import { EmployeeType } from '../../infrastructure/shared/employee_type.enum';
+import { EmployeeStatus } from '../../infrastructure/shared/employee_status.enum';
 import { Doc } from './doc.entity';
 
 @Entity('employee')

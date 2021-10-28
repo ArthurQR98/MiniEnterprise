@@ -1,6 +1,6 @@
 import { IsDateString, IsEmail, IsNotEmpty,IsString, MaxLength} from 'class-validator';
 import { Role } from '../../../domain/entities/role.entity';
-import { EmployeeType } from '../../../employee_type.enum';
+import { EmployeeType } from '../../../infrastructure/shared/employee_type.enum';
 
 export class SignUpDto {
     @IsNotEmpty()

@@ -9,8 +9,8 @@ import { RoleRepository } from '../../../infrastructure/repository/role.reposito
 import { ReadRoleDto } from '../../../application/dto/role/read-role.dto';
 import { Role } from 'src/domain/entities/role.entity';
 import EmployeeNotFoundException from 'src/domain/error/employeeNotFound.exception';
-import { EmployeeStatus } from '../../../employee_status.enum';
-import { EmployeeType } from '../../../employee_type.enum';
+import { EmployeeStatus } from '../../../infrastructure/shared/employee_status.enum';
+import { EmployeeType } from '../../../infrastructure/shared/employee_type.enum';
 
 @Injectable()
 export class EmployeeService {
